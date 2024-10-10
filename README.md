@@ -94,7 +94,24 @@ SELECT COUNT(id), fecha FROM reservaciones GROUP BY fecha ORDER BY COUNT(id) DES
 SELECT * FROM platillos INNER JOIN categoria ON categoria.id = platillos.categoriaId;
 ```
 
-23. 
+23. Contar Tablas unidas:
+    
+```
+SELECT COUNT(platillos.id), categoria.nombre FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id GROUP BY categoria.nombre;
+```
+
+24. 
+
+25. 
+
+
+
+
+
+    
+
+
+
 
 
 
