@@ -102,7 +102,9 @@ SELECT * FROM platillos INNER JOIN categoria ON categoria.id = platillos.categor
 16. Contar Tablas unidas:
     
 ```
-SELECT COUNT(platillos.id), categoria.nombre FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id GROUP BY categoria.nombre;
+SELECT COUNT(platillos.id), categoria.nombre
+FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id
+GROUP BY categoria.nombre;
 ```
 
 17. Mostrar valores no duplicados:
