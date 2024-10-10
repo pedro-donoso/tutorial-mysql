@@ -40,6 +40,7 @@ USE nombreBD;
 ```
 DESCRIBE nombreTabla;
 ```
+![describe](https://github.com/user-attachments/assets/270abf7d-5129-41c9-b0bb-d45c5b2e623f)
 
 7. Agregar datos a la Tabla:
 
