@@ -76,15 +76,25 @@ ALTER TABLE clientes ADD email VARCHAR(30);
 ALTER TABLE clientes DROP COLUMN email;
 ```
 
-19. 
+19. Ejemplo de Orden Descendente (Otra Tabla):
 
+```
+SELECT * FROM reservaciones ORDER BY fecha DESC;
+```
 
+20. Agrupar elementos:
 
-20. 
+```
+SELECT COUNT(id), fecha FROM reservaciones GROUP BY fecha ORDER BY COUNT(id) DESC;
+```
 
+21. Unir Tablas:
 
+```
+SELECT * FROM platillos INNER JOIN categoria ON categoria.id = platillos.categoriaId;
+```
 
-21. 
+23. 
 
 
 
