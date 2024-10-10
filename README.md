@@ -100,9 +100,37 @@ SELECT * FROM platillos INNER JOIN categoria ON categoria.id = platillos.categor
 SELECT COUNT(platillos.id), categoria.nombre FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id GROUP BY categoria.nombre;
 ```
 
-24. 
+24. Mostrar valores no duplicados:
 
-25. 
+```
+SELECT DISTINCT precio FROM platillos;
+```
+
+25. Aplicar Rango:
+
+```
+SELECT * FROM platillos WHERE precio BETWEEN 100 AND 200;
+```
+    
+27. Busqueda especifica:
+
+```
+SELECT * FROM platillos WHERE nombre LIKE '%Cafe%';
+```
+
+29. Concatenar columnas y Alias:
+
+```
+SELECT  CONCAT(nombre, ' ', apellido) AS 'Nombre Completo', hora, fecha, cantidadMesa FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Ana Preciado%';
+```
+
+30. 
+
+31. 
+
+
+
+
 
 
 
