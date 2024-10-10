@@ -52,10 +52,10 @@ VALUES ('Juan', 'De la torre', 'Avenida Radiante 127001');
 SELECT * FROM clientes;
 ```
 
-12. Actualizar dato:
+12. Actualizar dato (Agregar ID específico):
 
 ```
-UPDATE clientes SET nombre = 'Juan Pablo' WHERE id = 1;
+UPDATE clientes SET nombre = 'Juan Pablo' WHERE id = númeroID;
 ```
 
 14. Borrar dato:
