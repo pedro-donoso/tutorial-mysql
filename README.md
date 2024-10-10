@@ -128,7 +128,8 @@ SELECT * FROM platillos WHERE nombre LIKE '%Cafe%';
 20. Concatenar columnas y Alias:
 
 ```
-SELECT  CONCAT(nombre, ' ', apellido) AS 'Nombre Completo', hora, fecha, cantidadMesa FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Ana Preciado%';
+SELECT  CONCAT(nombre, ' ', apellido) AS 'Nombre Completo', hora, fecha, cantidadMesa
+FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Ana Preciado%';
 ```
 
 21. Revisar múltiples condiciones:
