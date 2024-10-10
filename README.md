@@ -85,6 +85,7 @@ ALTER TABLE clientes DROP COLUMN email;
 ```
 SELECT * FROM reservaciones ORDER BY fecha DESC;
 ```
+![schema](https://github.com/user-attachments/assets/b3965876-a604-49b0-937d-2dddb3e990fc)
 
 14. Agrupar elementos:
 
