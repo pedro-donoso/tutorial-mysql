@@ -1,3 +1,5 @@
+![mysql](https://github.com/user-attachments/assets/0fbcb0a6-1d6d-4b9c-befd-8c1077c668ba)
+
 ### MySQL Command Line Client
 
 1. Abrir terminal
