@@ -124,9 +124,13 @@ SELECT * FROM platillos WHERE nombre LIKE '%Cafe%';
 SELECT  CONCAT(nombre, ' ', apellido) AS 'Nombre Completo', hora, fecha, cantidadMesa FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Ana Preciado%';
 ```
 
-30. 
+30. Revisar múltiples condiciones:
 
-31. 
+```
+SELECT * FROM reservaciones WHERE fecha = '2019-07-02' AND cantidadmesa IN (2, 3)
+```
+
+
 
 
 
