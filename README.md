@@ -64,9 +64,32 @@ UPDATE clientes SET nombre = 'Juan Pablo' WHERE id = númeroID;
 DELETE FROM clientes WHERE id = 1;
 ```
 
-16. 
+16. Agregar nueva Columna a la tabla:
 
-17. 
+```
+ALTER TABLE clientes ADD email VARCHAR(30);
+```
+
+18. Eliminar Columna de la tabla:
+
+```
+ALTER TABLE clientes DROP COLUMN email;
+```
+
+19. 
+
+
+
+20. 
+
+
+
+21. 
+
+
+
+
+
 
 
 
