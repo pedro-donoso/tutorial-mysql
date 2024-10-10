@@ -2,31 +2,29 @@
 
 ### MySQL Command Line Client
 
-1. Abrir terminal
+1. Abrir terminal e ingresar contraseña:
 
    ![pass](https://github.com/user-attachments/assets/6dcd58dd-4bc8-4a4f-bbae-ead6158fd970)
 
-2. Ingresar contraseña
-
-3. Revisar BD creadas:
+2. Revisar BD creadas:
 
 ```
 SHOW DATABASES;
 ```
 
-4. Crear BD:
+3. Crear BD:
 
 ```
 CREATE DATABASE nombreBD;
 ```
 
-5. Utilizar BD:
+4. Utilizar BD:
 
 ```
 USE nombreBD;
 ```
 
-6. Crear Tabla:
+5. Crear Tabla:
 
    ```
    CREATE TABLE clientes(
@@ -37,98 +35,98 @@ USE nombreBD;
     PRIMARY KEY (id)
     );
    ```
-7. Mostrar campos de la Tabla:
+6. Mostrar campos de la Tabla:
 
 ```
 DESCRIBE nombreTabla;
 ```
 
-8. Agregar datos a la Tabla:
+7. Agregar datos a la Tabla:
 
 ```
 INSERT INTO clientes (nombre, apellido, direccion)
 VALUES ('Juan', 'De la torre', 'Avenida Radiante 127001');
 ```
 
-9. Ver todos los datos de la Tabla:
+8. Ver todos los datos de la Tabla:
 
 ```
 SELECT * FROM clientes;
 ```
 
-10. Actualizar dato (Agregar ID específico):
+9. Actualizar dato (Agregar ID específico):
 
 ```
 UPDATE clientes SET nombre = 'Juan Pablo' WHERE id = númeroID;
 ```
 
-11. Borrar dato:
+10. Borrar dato:
 
 ```
 DELETE FROM clientes WHERE id = 1;
 ```
 
-12. Agregar nueva Columna a la tabla:
+11. Agregar nueva Columna a la tabla:
 
 ```
 ALTER TABLE clientes ADD email VARCHAR(30);
 ```
 
-13. Eliminar Columna de la tabla:
+12. Eliminar Columna de la tabla:
 
 ```
 ALTER TABLE clientes DROP COLUMN email;
 ```
 
-14. Ejemplo de Orden Descendente (Otra Tabla):
+13. Ejemplo de Orden Descendente (Otra Tabla):
 
 ```
 SELECT * FROM reservaciones ORDER BY fecha DESC;
 ```
 
-15. Agrupar elementos:
+14. Agrupar elementos:
 
 ```
 SELECT COUNT(id), fecha FROM reservaciones GROUP BY fecha ORDER BY COUNT(id) DESC;
 ```
 
-16. Unir Tablas:
+15. Unir Tablas:
 
 ```
 SELECT * FROM platillos INNER JOIN categoria ON categoria.id = platillos.categoriaId;
 ```
 
-17. Contar Tablas unidas:
+16. Contar Tablas unidas:
     
 ```
 SELECT COUNT(platillos.id), categoria.nombre FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id GROUP BY categoria.nombre;
 ```
 
-18. Mostrar valores no duplicados:
+17. Mostrar valores no duplicados:
 
 ```
 SELECT DISTINCT precio FROM platillos;
 ```
 
-19. Aplicar Rango:
+18. Aplicar Rango:
 
 ```
 SELECT * FROM platillos WHERE precio BETWEEN 100 AND 200;
 ```
     
-20. Busqueda especifica:
+19. Busqueda especifica:
 
 ```
 SELECT * FROM platillos WHERE nombre LIKE '%Cafe%';
 ```
 
-21. Concatenar columnas y Alias:
+20. Concatenar columnas y Alias:
 
 ```
 SELECT  CONCAT(nombre, ' ', apellido) AS 'Nombre Completo', hora, fecha, cantidadMesa FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Ana Preciado%';
 ```
 
-32. Revisar múltiples condiciones:
+21. Revisar múltiples condiciones:
 
 ```
 SELECT * FROM reservaciones WHERE fecha = '2019-07-02' AND cantidadmesa IN (2, 3)
