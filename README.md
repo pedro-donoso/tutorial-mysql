@@ -54,6 +54,7 @@ VALUES ('Juan', 'De la torre', 'Avenida Radiante 127001');
 ```
 SELECT * FROM clientes;
 ```
+![select](https://github.com/user-attachments/assets/6b398e11-9dfe-4935-a62f-653ae8b3722f)
 
 9. Actualizar dato (Agregar ID específico):
 
